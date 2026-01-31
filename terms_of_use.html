@@ -1,63 +1,118 @@
-TERMS OF USE – MyBizzCard
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MyBizzCard – Terms of Use</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+}
+button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+button:hover {
+    background: #2ea043;
+}
+pre {
+    white-space: pre-wrap;
+}
+h1 {
+    margin-top: 0;
+}
+</style>
+</head>
+<body>
 
+<div class="container">
+    <button onclick="copyText()">Copy</button>
+    <h1>Terms of Use</h1>
+
+<pre id="termsText">
+TERMS OF USE
 Last Updated: 12 January 2026
 
-1. Service Description
-MyBizzCard (“App”) provides tools to scan, create, manage, and export business card information using on-device processing and optional AI-assisted recognition features.
+These Terms of Use govern your use of the MyBizzCard mobile application (“App”).
 
-2. Accuracy Disclaimer
-The App uses OCR and AI technologies that may produce incomplete or inaccurate results.
-You are solely responsible for reviewing, verifying, and correcting all extracted information before saving, sharing, contacting, or exporting it.
+---------------------------------------
+1. SERVICE DESCRIPTION
+---------------------------------------
+MyBizzCard provides tools to scan, extract, and manage business card information using on-device OCR and optional AI-assisted recognition.
 
-3. Permission & Legal Compliance
-You confirm that you have the legal right and permission to scan, store, or process any business card or contact information.
-You are responsible for complying with all applicable data protection, privacy, and contact-sharing laws in your jurisdiction.
+---------------------------------------
+2. ACCURACY DISCLAIMER
+---------------------------------------
+OCR and AI results may be inaccurate. You are solely responsible for reviewing, verifying, and correcting all extracted information before saving, sharing, or using it.
 
-4. AI Processing
-Some features use AI-assisted extraction.
-When AI is enabled, the App may securely transmit either:
-- text extracted on your device, or
-- an image provided by you
-to a secure processing service, which forwards the data to an AI provider for recognition.
-The extracted results are returned directly to your device.
+---------------------------------------
+3. USER RESPONSIBILITY
+---------------------------------------
+You must have permission to scan, store, or process another person’s contact information. You are responsible for compliance with all applicable laws and regulations.
 
-MyBizzCard does not store business card images, OCR text, or extracted contact data on its servers.
+---------------------------------------
+4. AI FEATURES
+---------------------------------------
+Some features use AI-powered extraction. When AI is used, the App may securely send OCR text or card images to a processing service that communicates with OpenAI. Extracted results are returned to your device.
 
-5. Usage Limits
-Certain features may be subject to usage limits depending on the selected plan.
-Usage limits may change over time for testing, promotional, technical, or operational reasons.
-Current availability and limits are indicated within the App where applicable.
+We do not store business card images or extracted contact data on our servers.
 
-6. Subscriptions & Payments
-Paid features are offered via subscriptions handled exclusively by Google Play.
-MyBizzCard does not collect or store payment or billing information.
-Subscription management, renewals, and cancellations are handled through your Google Play account.
+---------------------------------------
+5. SUBSCRIPTIONS
+---------------------------------------
+Paid subscriptions are handled by Google Play. Subscription management and cancellation are controlled through your Google Play account.
 
-7. Liability Limitation
-To the maximum extent permitted by law, MyBizzCard shall not be liable for:
-- incorrect or incomplete recognition results
-- misuse of scanned data
-- unauthorized collection or sharing of contact information
-- loss of data stored on your device
+---------------------------------------
+6. LIMITATION OF LIABILITY
+---------------------------------------
+To the maximum extent permitted by law, MyBizzCard shall not be liable for any damages resulting from incorrect recognition, misuse of extracted data, or unauthorized scanning.
 
-Use of the App is at your own risk.
+---------------------------------------
+7. TERMINATION
+---------------------------------------
+We reserve the right to suspend or terminate access to the App if these Terms are violated.
 
-8. Data Storage
-All saved business card data is stored locally on your device unless you choose to export it elsewhere.
-MyBizzCard does not maintain user accounts or cloud storage.
+---------------------------------------
+8. CHANGES
+---------------------------------------
+These Terms may be updated from time to time. Continued use of the App constitutes acceptance of the updated Terms.
 
-9. Children’s Use
-The App is not intended for use by children under the age of 13.
-We do not knowingly collect information from children.
-
-10. Changes to These Terms
-These Terms may be updated from time to time.
-Continued use of the App after updates constitutes acceptance of the revised Terms.
-
-11. Governing Law
+---------------------------------------
+9. GOVERNING LAW
+---------------------------------------
 These Terms are governed by the laws of Türkiye.
-Any disputes shall be resolved by the competent courts of Istanbul, unless otherwise required by law.
 
-12. Contact
-For questions or support regarding these Terms:
-mybizzzcard@gmail.com
+---------------------------------------
+10. CONTACT
+---------------------------------------
+Support: mybizzzcard@gmail.com
+</pre>
+</div>
+
+<script>
+function copyText() {
+    const text = document.getElementById("termsText").innerText;
+    navigator.clipboard.writeText(text);
+    alert("Terms of Use copied!");
+}
+</script>
+
+</body>
+</html>
